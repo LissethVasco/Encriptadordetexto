@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --color-fondo:#3a3939;
+    --color-texto-1:#000000;
+    --color-texto-2:#000000;
+    --color--texto-3:#ffffff;
+}
+
+
+*{
+padding: 0;
+margin: 0;
+}
+
+.fondo_logo{
+position: absolute;
+width: 10%;
+left: 2.5%;
+border-radius: 50%;
+opacity: .6;
+
+}
+
+.fondo{
+    position: absolute;
+    width: 100vw;
+    height: 98vh;
+    opacity: .8;
+}
+
+.Cuerpo{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+ 
+    display: flex;
+    justify-content: space-between; 
+
+}
+
+
+
+.section{
+   
+    width: 100%;
+    margin: 8% 2% 0% 2% ;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.input{
+   position: absolute;
+    width: 40%;
+    height: 64%;
+    left: 12%;
+    top: 15%;
+    font-family: "Inter", sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--color--texto-3); 
+    border: none;
+    background-color: var(--color-fondo);
+    outline: none ;
+    border-radius: 10%;
+    padding: 1.5rem ;
+
+}
+
+.input::placeholder{
+    color: rgb(255, 255, 255);
+}
+
+.alerta{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    left: 12%;
+    top: 80%;
+    gap: 10px;
+    align-items: center;
+    overflow: hidden;
+    color: var(--color--texto-3);
+    
+}
+
+.p1{
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    overflow: hidden;
+    
+}
+
+.fot_botones{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    padding: 2% 0;
+    left: 12%;
+    gap: 3rem;
+    top: 82%;
+    width: 80%;
+    overflow: hidden;
+}
+
+.form__btn{
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 800;
+    padding: 2%;
+    text-align: center;
+    border-radius: 24px;
+    width: 25%;
+    color: var(--color--texto-3);
+    background-color:var(--color-texto-1);
+    overflow: hidden;
+
+}
+
+.form__btn--secondary{
+    
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 800;
+    padding: 2%;
+    text-align: center;
+    border-radius: 24px;
+    width: 25%;
+    color: var(--color-texto-1);
+    background-color: var(--color--texto-3);
+    overflow: hidden;
+    
+}
+
+.form__btn:hover,
+.form__btn--secondary:hover{
+    margin:0.3% ;
+    width: 24.5%;
+    padding: 1.8%;
+    
+}
+
+.Rectangulo{
+    position: absolute;
+    background-color: #ffffff;
+    padding: 0;
+    width: 28%;
+    height: 90%;
+    left: 60%;
+    top: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction:column ;
+    justify-content: center;
+    border-radius: 32px;
+    text-align: center;
+    color: var(--color-texto-2);
+    box-shadow: 20px 20px 40px -10px var(--color-texto-1);
+    overflow: hidden;
+   
+}
+
+.mensaje_encriptado{
+position: absolute;
+top: 37%;
+
+}
+
+.Imglogo{
+    position: absolute;
+    width: 15%;
+    top: 5%;
+    
+}
+
+.Img-Muñeco{
+    position: absolute;
+    width: 60%;
+    top: 7%;
+       
+}
+
+.loader{
+    position: absolute;
+    top: 8%;
+    
+}
+
+.Rectangulo_p1{
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding: 0.5rem;
+    overflow: hidden;
+
+}
+
+.Rectangulo_p2{
+    font-family: "Inter", sans-serif;
+    font-size: 1.3rem;
+    font-weight: normal;
+    padding: 1rem ;
+    overflow: auto;
+}
+
+.respuesta{
+    font-family: "inter", sans-serif;
+    font-size: 1.2rem;
+    width: 100%;
+    font-weight: 600;
+    outline: none;
+    border: none;
+}
+
+.copiarBtn{
+    position: absolute;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 800;
+    padding: 2%;
+    text-align: center;
+    border-radius: 24px;
+    width: 50%;
+    color: var(--color--texto-3);
+    background-color: var(--color-texto-1);
+    overflow: hidden;
+    top: 90%;
+    
+}
+
+
+.copiarBtn:hover{
+    margin:0.3% ;
+    width: 49.5%;
+    padding: 1.8%;
+    
+}
+
+footer{
+    background-color: var(--color-fondo);
+    margin: 0;
+}
+
+.firma{
+    position: absolute;
+    width: 100vw;
+    font-family: "Inter", sans-serif;
+ padding: .5rem 5rem;
+    background-color: var(--color-fondo);
+    color: #ffffff;
+    font-weight: 500;
+    
+
+}
+
+
+@media(max-width:1350px){
+    
+.Cuerpo{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.input{
+    display: flex;
+    width: 75%;
+    height: 40%;
+    max-height: 80%;
+    left: 8%;
+    max-width: 80%;
+}
+
+.alerta{
+    width: 80%;
+    top: 58%;
+    left: 8%;
+    
+}
+
+.alerta p{
+    font-size: 1.3rem;
+}
+
+.fot_botones{
+    width: 80%;
+    flex-direction: row;
+    justify-content: center;
+    top: 60%;
+    left: 8%;
+}
+
+.form__btn,
+.form__btn--secondary{
+    width: 48%;
+}
+
+.form__btn:hover,
+.form__btn--secondary:hover{
+    margin:0.3% ;
+    width:47.5%;
+    padding: 1.8%;
+    
+}
+
+.Rectangulo{
+    width: 80%;
+    max-height: 25%;
+    top: 70.5%;
+    left: 8%;
+    align-items: center;
+}
+
+
+
+.respuesta{
+    width: 100%;
+}
+
+.copiarBtn{
+    top: 80%;
+}
+
+.Img-Muñeco{
+    width: 0;
+}
+
+.fondo_logo{
+
+    top: 3.5%;
+}
+
+.loader{
+    width: 10%;
+}
+}
+
+@media(max-width:1000px){
+
+    .fot_botones{
+        top: 61%;
+        gap: 4px;
+        
+    }
+.alerta p{
+    font-size: 1rem;
+}
+
+.Img-Muñeco{
+    width: 0;
+    
+}
+
+.mensaje_encriptado{
+top: 5%;
+
+}
+
+.Imglogo{
+    width: 30%;
+}
+
+.copiarBtn{
+
+    top: 80%;
+}
+
+.loader{
+    width: 0;
+}
+
+.fondo_logo{
+    width: 20%;
+    left: 4.5%;
+    top: 3%;
+}
+}

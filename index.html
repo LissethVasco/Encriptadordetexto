@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <img class="fondo" src="./imagenes/fondos/opcion1.jpg" alt="">
+    <main class="Cuerpo">
+        <h1 class="h1">
+            <img class="fondo_logo" src="./imagenes/fondos/fondo logo.png" alt="">
+            <img class="Imglogo" src="./imagenes/Logo.png" alt="">
+        </h1>
+        <div class="section">
+              
+            <textarea 
+                name="mensaje"
+                class="input" 
+                id="input"
+                type="submit"
+                rows="18" 
+                cols="40" 
+                style="text-transform: lowercase;"
+                onkeyup="avascript:this.value=this.value.toLowerCase()"
+                placeholder="Ingrese el texto aqui"
+            ></textarea>
+            <div class="alerta">
+                <img src="./imagenes/Group.png" alt="">
+                
+                <p class="p1" >Solo letras minusculas y sin acentos</p>
+            </div>
+            <div class="fot_botones">
+                <input
+            class="form__btn"
+            type="submit"
+            value="Encriptar"
+            id="encriptarBtn"
+          />
+          <input
+            class="form__btn--secondary"
+            type="submit"
+            value="Desencriptar"
+            id="desencriptarBtn"
+          />
+            </div>
+
+        </div>
+            
+            <div class="Rectangulo">
+                
+                <img class="Img-Muñeco" src="./imagenes/Muñeco.png" alt="" id="Img-Muñeco">
+                <img class="loader"  id="loader" src="./imagenes/fondos/cargando.gif" alt="" hidden>
+                <div class="mensaje_encriptado">
+                    <h2 class="Rectangulo_p1" id="titulo_mensaje">Ningún mensaje fue encontrado</h2>
+                    <p class="Rectangulo_p2" id="parrafo_rectangulo" >Ingresa el texto que desees encriptar o desencriptar</p>
+                    
+                </div>
+                <button id="copiarBtn" class="copiarBtn" hidden >
+                    Copiar
+                  </button>
+            </div>
+        
+    </main>
+   <footer>
+    <p class="firma">Desarrollado por Lisseth Vasco.</p>
+   </footer>
+</body>
+<script src="app.js"></script>
+</html>
